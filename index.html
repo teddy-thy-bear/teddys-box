@@ -26,7 +26,7 @@
     	}
         img {
         	width: 100px;
-            
+            height: 100px;
         }
         button {
         	width: 100px;
@@ -37,9 +37,32 @@
             
         }
         @keyframes colourChange {
-        	from{background: #7c9fd9;}
-            to{background: #536a91;}
-        }
+        	0%{background: #7c9fd9;}
+            50%{background: #536a91;}
+            100%{background: #7c9fd9;}
+            }
+            img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 	</style>
 </head>
 
@@ -47,6 +70,10 @@
 	<h1>teddy's box</h1>
         	<p style="font-size: 20px;"> welcome to teddy's box full of random stuff (if you are seeing my website, I made changes so that the button animations works after I have submitted the form so I have 3 different features in my website)</p>
         	 <img src="https://media.tenor.com/evoSxqcmKCYAAAAe/soviet-cat-sovicat.png">
+             	
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLE4zBZjxgKnoa3KC8TMjQxqS4tSE_pRVxA&s">
+             
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9g6cFrPZsJP-6fj9-sCImr8VvVfkMrT1tLQ&s">
              
              <h2>food stuff</h2>
              
@@ -55,11 +82,41 @@
              <a style="font-size: 20px;" 				       href="https://docs.google.com/document/d/1ny6oA15wprxRCf_YMwq2X9tUwdCiQGpxX_kkyHMr71Y/edit?usp=sharing">
              <button>Beef Jerky Recipe</button> 
              </a>
+          
+          <h2>game stuff</h2>
            
-
-</body>
+          	 <a style="font-size: 20px;" 				       
+          	 href="https://sandboxels.r74n.com/">
+          	 <button>Sandboxels</button>
+          	 </a>
+           
+         	  <a style="font-size: 20px;" 				       
+         	  href="https://www.roblox.com/">
+         	  <button>Roblox</button>
+         	  </a>
+           
+           	 <a style="font-size: 20px;" 				       
+          	 href="https://www.xbox.com/en-US/play/games/fortnite/BT5P2X999VH2">
+           	<button>Fortnite</button>
+          	 </a>
+        <h2> learning stuff</h2>
+</body>	
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
